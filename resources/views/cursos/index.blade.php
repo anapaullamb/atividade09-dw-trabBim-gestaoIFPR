@@ -15,7 +15,7 @@
                 :header="['id', 'nome','sigla']" 
                 :data="$dados"
                 :hide="[true, false, false]" 
-                :button="['show' => true,'delete' => true]" 
+                :button="['show' => true,'delete' => true, 'vinculo' => false]" 
             />
 
         </div>

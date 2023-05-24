@@ -17,6 +17,7 @@ Route::resource('eixos', 'EixoController');
 Route::resource('cursos', 'CursoController');
 Route::resource('disciplinas', 'DisciplinaController');
 Route::resource('professores', 'ProfessorController');
+Route::resource('professoresDisciplinas', 'ProfessoresDisciplinasController');
 
 Route::get('/', function () {
     return view('index');

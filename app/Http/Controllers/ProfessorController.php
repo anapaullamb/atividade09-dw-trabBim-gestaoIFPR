@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 Use \App\Models\Eixo;
 Use \App\Models\Professor;
 Use \App\Http\Requests\StoreProfessorRequest;
+Use \App\Http\Requests\EditProfessorRequest;
 
 use Illuminate\Http\Request;
 
@@ -91,7 +92,7 @@ class ProfessorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(StoreProfessorRequest $request, $id)
+    public function update(EditProfessorRequest $request, $id)
     {
         $obj = Professor::find($id);
 
